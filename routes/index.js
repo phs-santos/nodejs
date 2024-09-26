@@ -6,7 +6,6 @@ const axios = require('axios');
 router.get('/', (req, res) => res.sendFile(path.join(__dirname, '../views/index.html')));
 
 router.post('/controlid', async (req, res) => {
-  console.log(req);
   const { host, login, password } = req.body;
 
   if (!host || !login || !password) {
