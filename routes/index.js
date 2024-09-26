@@ -7,4 +7,8 @@ router.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../views/index.html'));
 });
 
+router.get('/control', (req, res) => {
+  res.send('controlid');
+});
+
 module.exports = router;
